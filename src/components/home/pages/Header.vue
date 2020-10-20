@@ -16,14 +16,16 @@
 <script>
 
 </script>
-<style scoped>
+<style scoped lang='stylus'>
+
+@import '~@css/var.styl'
 	
 .header {
 	width: 100%;
 	line-height: .44rem;
 	font-size: .14rem;
-	background: #00bcd4;
-	color: #fff;
+	background: $bgColor;
+	color: $textColor;
 	display: flex;
 }
 .header-search {

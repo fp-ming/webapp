@@ -5,14 +5,17 @@ import App from './App'
 import router from './router'
 
 // 导入 reset.css 文件
-import './assets/css/reset.css'
+import '@css/reset.css'
 // 导入 fastclick.js 文件
 import FastClick from 'fastclick'
 FastClick.attach(document.body)
 //导入iconfont.css
-import './assets/css/iconfont.css'
-//导入font.js 适配文件
-//import './assets/js/font.js'
+import '@css/iconfont.css'
+
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+// import style (>= Swiper 6.x)
+import 'swiper/swiper-bundle.css'
+Vue.use(VueAwesomeSwiper)
 
 Vue.config.productionTip = false
 
