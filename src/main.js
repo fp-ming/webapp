@@ -11,18 +11,19 @@ import FastClick from 'fastclick'
 FastClick.attach(document.body)
 //导入iconfont.css
 import '@css/iconfont.css'
+Vue.config.productionTip = false
 
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 // import style (>= Swiper 6.x)
 import 'swiper/swiper-bundle.css'
 Vue.use(VueAwesomeSwiper)
 
-Vue.config.productionTip = false
-
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
-  components: { App },
+  components: { 
+  	App,
+  },
   template: '<App/>'
 })

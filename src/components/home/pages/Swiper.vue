@@ -2,15 +2,15 @@
 
 <div class="header-swiper">
 	<swiper ref="mySwiper" :options="swiperOptions">
-    <swiper-slide>
-    	<img src="@img/1.jpg" alt="dsad">
-    </swiper-slide>
-    <swiper-slide>
-    	<img src="@img/2.jpg" alt="dasd">
-    </swiper-slide>
-    
-    <div class="swiper-pagination" slot="pagination"></div>
-  </swiper>
+	    <swiper-slide>
+	    	<img src="@img/1.jpg" alt="dsad">
+	    </swiper-slide>
+	    <swiper-slide>
+	    	<img src="@img/2.jpg" alt="dasd">
+	    </swiper-slide>
+	    
+	    <div class="swiper-pagination" slot="pagination"></div>
+  	</swiper>
 </div>
 
 </template>
@@ -23,8 +23,7 @@
         swiperOptions: {
           pagination: {
             el: '.swiper-pagination'
-          },
-          loop: true,
+          }
         }
       }
     }
@@ -39,8 +38,8 @@
 }
 
 .header-swiper img{
-  width: 3.75rem;
-  height: 1rem;
+  width: 100%;
+  height: 100%;
 }
 
 </style>
