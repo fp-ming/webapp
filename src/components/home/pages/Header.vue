@@ -9,7 +9,7 @@
 
 		</div>
 		<div class="header-right">
-			北京<span class="iconfont">&#xe6aa;</span>
+			北京<span class="iconfont">&#xe606;</span>
 		</div>
 	</div>
 </template>

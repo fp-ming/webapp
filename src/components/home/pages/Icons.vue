@@ -104,7 +104,13 @@ export default {
 
 </script>
 
-<style scoped>
+<style scoped lang="stylus">
+
+@import '~@css/common.styl'
+
+.home-icons {
+	background: #fff;
+}
 
 .icons-item {
 	width: 25%;
@@ -123,6 +129,7 @@ export default {
 	font-size: .14rem;
 	text-align: center;
 	color: #212121;
+	textOverflow();
 }
 
 </style>
