@@ -108,6 +108,9 @@ export default {
 	white-space: nowrap;
 	font-size: 0;
 }
+.hot-list::-webkit-scrollbar{
+    display: none;
+}
 .hot-list .hot-item {
 	display: inline-block;
 	font-size: 0;

@@ -6,6 +6,8 @@
 		<HomeLocation />
 		<HomeActivity />
 		<HomeHot />
+		<HomeLike />
+		<HomeVacation />
 	</div>
 </template>
 <script>
@@ -16,6 +18,8 @@ import HomeIcons from './pages/Icons'
 import HomeLocation from './pages/Location'
 import HomeActivity from './pages/Activity'
 import HomeHot from './pages/Hot'
+import HomeLike from './pages/Like'
+import HomeVacation from './pages/Vacation'
 export default {
 	components: {
 		HomeHeader,
@@ -23,7 +27,9 @@ export default {
 		HomeIcons,
 		HomeLocation,
 		HomeActivity,
-		HomeHot
+		HomeHot,
+		HomeLike,
+		HomeVacation
 	}
 }
 
@@ -34,6 +40,7 @@ export default {
 	background: #f0f0f0;
 	width: 100%;
 	overflow: hidden;
+	padding-bottom: 2rem;
 }
 
 </style>
