@@ -1,13 +1,13 @@
 <template>
 	<div class="home">
 		<HomeHeader />
-		<HomeSwiper />
-		<HomeIcons />
+		<HomeSwiper :swiperList='swiperList' />
+		<HomeIcons :iconsList='iconsList' />
 		<HomeLocation />
 		<HomeActivity />
-		<HomeHot />
-		<HomeLike />
-		<HomeVacation />
+		<HomeHot :hotList='hotList' />
+		<HomeLike :likeList='likeList' />
+		<HomeVacation :vacationList='vacationList' />
 	</div>
 </template>
 <script>
@@ -30,10 +30,28 @@ export default {
 		HomeHot,
 		HomeLike,
 		HomeVacation
+	},
+	data () {
+		return {
+			swiperList:[],
+		}
+	},
+	mounted() {
+		this.axios.get('/api/dataHome.json')
+			.then((res) => {
+				const data = res.data.data[0]
+				this.swiperList = data.swiperList;
+				this.iconsList = data.iconsList;
+				this.hotList = data.hotList;
+				this.likeList = data.likeList;
+				this.vacationList = data.vacationList;
+
+			})
 	}
 }
 
 </script>
+
 <style scoped>
 
 .home {

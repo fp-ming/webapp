@@ -2,16 +2,12 @@
 
 <div class="header-swiper">
 	<swiper ref="mySwiper" :options="swiperOptions">
-	    <swiper-slide>
-	    	<img src="@img/swiper1.jpg" alt="">
+	    <swiper-slide
+        v-for="item in swiperList"
+        :key="item.id"
+      >
+	    	<img :src="item.imgUrl" alt="">
 	    </swiper-slide>
-	    <swiper-slide>
-	    	<img src="@img/swiper2.jpg" alt="">
-	    </swiper-slide>
-      <swiper-slide>
-        <img src="@img/swiper3.jpg" alt="">
-      </swiper-slide>
-	    
 	    <div class="swiper-pagination" slot="pagination"></div>
   	</swiper>
 </div>
@@ -21,6 +17,7 @@
 <script>
   export default {
     name: 'carrousel',
+    props:['swiperList'],
     data() {
       return {
         swiperOptions: {
@@ -30,6 +27,8 @@
           loop: true
         }
       }
+    },
+    mounted() {
     }
   }
 </script>

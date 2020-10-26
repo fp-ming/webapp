@@ -27,30 +27,7 @@
 <script>
 	
 export default {
-	data () {
-		return {
-			vacationList:[
-				{
-					"id":"01",
-					"imgUrl":"http://img1.qunarzz.com/sight/source/1606/85/c6b6bad1b977e.jpg_r_640x214_5c638941.jpg",
-					"title":"漂流勇进，烧烤露营",
-					"msg":"轻松水上漂，任我乐逍遥"
-				},
-				{
-					"id":"02",
-					"imgUrl":"http://img1.qunarzz.com/sight/source/1505/53/02091f1ee43d0a.jpg_r_640x214_2e3256b1.jpg",
-					"title":"北京清凉避暑胜地",
-					"msg":"到大自然中享受“天然空调”的清凉"
-				},
-				{
-					"id":"03",
-					"imgUrl":"http://img1.qunarzz.com/sight/source/1505/aa/7baaf8a851d221.jpg_r_640x214_1431200f.jpg",
-					"title":"北京必游TOP10",
-					"msg":"来北京必去的景点非这些地方莫属"
-				}
-			]
-		}
-	}
+	props:['vacationList'],
 }
 
 </script>

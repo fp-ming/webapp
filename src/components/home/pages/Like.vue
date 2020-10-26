@@ -19,10 +19,17 @@
 					{{item.title}}
 				</div>
 				<div class="like-item-msg">
-					{{item.msg}}条评论
+					<span 
+						class="iconfont iconfont-star "
+						v-for="count in item.stars"
+						:key="count"
+					>
+						&#xe605
+					</span>
+					<span style="margin-left:.1rem;">{{item.msg}}条评论</span>
 				</div>
 				<div class="like-item-map">
-					<span class="price">￥<b>{{item.pre}}</b></span>起
+					<span class="price">￥<b>{{item.pre}}</b></span>&nbsp;起
 					<span class="map">{{item.map}}</span>
 				</div>
 			</div>
@@ -35,28 +42,7 @@
 <script>
 
 export default {
-	data () {
-		return {
-			"likeList":[
-				{
-					"id":"01",
-					"imgUrl":"http://img1.qunarzz.com/sight/p0/1609/7a/7ae8ee7831836095a3.water.jpg_200x200_36727f69.jpg",
-					"title":"金海湖风景区",
-					"msg":"1341",
-					"pre":"18.8",
-					"map":"平谷区"
-				},
-				{
-					"id":"02",
-					"imgUrl":"http://img1.qunarzz.com/sight/p0/1803/12/126471e0966aca5ba3.img.jpg_200x200_f1286016.jpg",
-					"title":"北京国际鲜花港",
-					"msg":"1900",
-					"pre":"28.8",
-					"map":"顺义区"
-				}
-			],
-		}
-	}
+	props:['likeList'],
 }
 
 </script>
@@ -108,6 +94,10 @@ export default {
 	color: #616161;
 	margin-top: .15rem;
 }
+.like-item-msg .iconfont-star {
+	font-size: .12rem;
+	color: #ffff00;
+}
 .like-item-map {
 	font-size: .14rem;
 	margin-top: .15rem;
@@ -128,5 +118,6 @@ export default {
 	margin-right: .15rem;
 	textOverflow();
 }
+
 
 </style>
