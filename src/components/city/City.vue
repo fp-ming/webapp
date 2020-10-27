@@ -2,7 +2,9 @@
 	
 <div class="city">
 	<CityHeader />
-	<CityHot />
+	<CityHot :hotCities='hotCities' />
+	<CitySort :cities='cities' />
+	<CityList :cities='cities' />
 </div>
 
 </template>
@@ -11,11 +13,34 @@
 	
 import CityHeader from './pages/Header'
 import CityHot from './pages/Hot'
+import CitySort from './pages/Sort'
+import CityList from './pages/List'
 
 export default {
 	components: {
 		CityHeader,
-		CityHot
+		CityHot,
+		CitySort,
+		CityList
+	},
+	data () {
+		return {
+			hotCities:[],
+			cities:{},
+		}
+	},
+	mounted () {
+		this.http();
+	},
+	methods: {
+		http () {
+			this.axios.get('/api/city.json')
+			.then(res => {
+				const data = res.data.data;
+				this.hotCities = data.hotCities;
+				this.cities = data.cities;
+			})
+		}
 	}
 }
 

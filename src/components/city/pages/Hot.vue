@@ -5,23 +5,26 @@
 		热门城市
 	</div>
 	<ul class="city-hot-list">
-		<li class="city-hot-item">北京</li>
-		<li class="city-hot-item">上海</li>
-		<li class="city-hot-item">广东</li>
-		<li class="city-hot-item">北京</li>
-		<li class="city-hot-item">上海</li>
-		<li class="city-hot-item">广东</li>
-		<li class="city-hot-item">北京</li>
-		<li class="city-hot-item">上海</li>
-		<li class="city-hot-item">广东</li>
-		<li class="city-hot-item">北京</li>
-		<li class="city-hot-item">上海</li>
-		<li class="city-hot-item">广东</li>
-		<li class="city-hot-item">上海</li>
+		<li 
+			class="city-hot-item"
+			v-for="city in hotCities"
+			:key="city.id"
+		>
+			{{city.name}}
+		</li>
+		<div class="clear"></div>
 	</ul>
 </div>
 
 </template>
+
+<script>
+
+export default {
+	props:['hotCities'],
+}
+
+</script>
 
 <style scoped> 
 
@@ -30,7 +33,7 @@
 }
 
 .city-hot-title {
-	padding: .1rem .2rem;
+	padding:.2rem;
 }
 
 .city-hot-list {
@@ -38,18 +41,6 @@
 	font-size: .16rem;
 	color: #212121;
 }
-
-/*.city-hot-list:before {
-	content: " ";
-	width: 33.333%;
-	height: 100%;
-	position: absolute;
-	left: 33.333%;
-	border-left: .01rem solid #ddd;
-	border-right: .01rem solid #ddd;
-
-}*/
-
 .city-hot-item {
 	width: 33.111%;
 	height: .5rem;
@@ -62,5 +53,7 @@
 .city-hot-item:not(:nth-child(3n)) {
 	border-right: .01111rem solid #ddd;
 }
-
+.clear {
+	clear: both;
+}
 </style>

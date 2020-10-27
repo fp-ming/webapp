@@ -44,9 +44,6 @@ export default {
 
 			return pages
 		}
-	},
-	mounted () {
-		console.log(this.pages)
 	}
 }
 
