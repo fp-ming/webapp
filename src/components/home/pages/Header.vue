@@ -8,12 +8,20 @@
 			输入城市/景点/游玩主题
 
 		</div>
-		<div class="header-right">
-			北京<span class="iconfont">&#xe606;</span>
+		<div class="header-right" @click='toCity'>
+				北京<span class="iconfont">&#xe606;</span>
 		</div>
 	</div>
 </template>
 <script>
+
+export default {
+	methods: {
+		toCity () {
+			this.$router.push('/city')
+		}
+	}
+}
 
 </script>
 <style scoped lang='stylus'>

@@ -34,6 +34,10 @@ export default {
 	data () {
 		return {
 			swiperList:[],
+			iconsList:[],
+			hotList:[],
+			likeList:[],
+			vacationList:[],
 		}
 	},
 	mounted() {

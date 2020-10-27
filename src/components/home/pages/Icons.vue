@@ -36,7 +36,6 @@ export default {
 	computed : {
 		pages () {
 			let pages = [];
-			console.log(this)
 			this.iconsList.forEach((item,index) => {
 				let idx = Math.floor(index/8);
 				if(!pages[idx]) pages[idx] = [];
@@ -45,6 +44,9 @@ export default {
 
 			return pages
 		}
+	},
+	mounted () {
+		console.log(this.pages)
 	}
 }
 
