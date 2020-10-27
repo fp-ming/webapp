@@ -49,7 +49,6 @@ export default {
 				this.hotList = data.hotList;
 				this.likeList = data.likeList;
 				this.vacationList = data.vacationList;
-
 			})
 	}
 }

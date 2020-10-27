@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import store from './store'
 
 // 导入 reset.css 文件
 import '@css/reset.css'
@@ -26,6 +27,7 @@ Vue.prototype.axios = axios
 new Vue({
   el: '#app',
   router,
+  store,
   components: { 
   	App,
   },

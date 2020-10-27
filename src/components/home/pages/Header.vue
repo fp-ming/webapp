@@ -9,17 +9,22 @@
 
 		</div>
 		<div class="header-right" @click='toCity'>
-				北京<span class="iconfont">&#xe606;</span>
+			{{city}}<span class="iconfont">&#xe606;</span>
 		</div>
 	</div>
 </template>
 <script>
+
+import {mapState} from 'vuex'
 
 export default {
 	methods: {
 		toCity () {
 			this.$router.push('/city')
 		}
+	},
+	computed: {
+		...mapState(['city']),
 	}
 }
 

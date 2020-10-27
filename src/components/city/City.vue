@@ -1,10 +1,8 @@
 <template>
 	
 <div class="city">
-	<CityHeader />
-	<CityHot :hotCities='hotCities' />
-	<CitySort :cities='cities' />
-	<CityList :cities='cities' />
+		<CityHeader />
+		<CityList :hotCities='hotCities' :cities='cities'  />
 </div>
 
 </template>
@@ -12,15 +10,11 @@
 <script>
 	
 import CityHeader from './pages/Header'
-import CityHot from './pages/Hot'
-import CitySort from './pages/Sort'
 import CityList from './pages/List'
 
 export default {
 	components: {
 		CityHeader,
-		CityHot,
-		CitySort,
 		CityList
 	},
 	data () {
