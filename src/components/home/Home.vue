@@ -12,6 +12,8 @@
 </template>
 <script>
 
+import {mapState} from 'vuex'
+
 import HomeHeader from './pages/Header'
 import HomeSwiper from './pages/Swiper'
 import HomeIcons from './pages/Icons'
@@ -38,18 +40,39 @@ export default {
 			hotList:[],
 			likeList:[],
 			vacationList:[],
+			updateCity:'',
 		}
 	},
 	mounted() {
-		this.axios.get('/api/dataHome.json')
+		this.updateCity = this.city;
+		this.http();
+	},
+	activated() {
+		if(this.updateCity != this.city) {
+			this.http();
+			this.updateCity = this.city;
+		}
+	},
+	methods: {
+		http() {
+			this.axios.get('/api/dataHome.json')
 			.then((res) => {
-				const data = res.data.data[0]
-				this.swiperList = data.swiperList;
-				this.iconsList = data.iconsList;
-				this.hotList = data.hotList;
-				this.likeList = data.likeList;
-				this.vacationList = data.vacationList;
+				const data = res.data.data;
+				data.forEach((val) => {
+					if(val.city == this.city) {
+						this.swiperList = val.swiperList;
+						this.iconsList = val.iconsList;
+						this.hotList = val.hotList;
+						this.likeList = val.likeList;
+						this.vacationList = val.vacationList;
+					}
+				})
+				
 			})
+		}
+	},
+	computed: {
+		...mapState(['city']),
 	}
 }
 

@@ -9,7 +9,8 @@
 
 		</div>
 		<div class="header-right" @click='toCity'>
-			{{city}}<span class="iconfont">&#xe606;</span>
+			<span class="header-right-content">{{city}}</span> 
+			<span class="iconfont header-right-iconfont">&#xe606;</span>
 		</div>
 	</div>
 </template>
@@ -32,6 +33,7 @@ export default {
 <style scoped lang='stylus'>
 
 @import '~@css/var.styl'
+@import '~@css/common.styl'
 	
 .header {
 	width: 100%;
@@ -59,7 +61,22 @@ export default {
 	font-weight: bold;
 }
 .header-right {
-	padding: 0 .1rem;
+	padding: 0 .05rem 0 .1rem;
+	width: .6rem;
+	font-size: .13rem;
+}
+.header-right-content {
+	display: block;
+	width: .4rem;
+	text-align: right;
+	padding-right: .04rem;
+	font-weight: bold;
+	textOverflow();
+	float: left;
+}
+.header-right-iconfont {
+	display: block;
+	float: left;
 }
 
 </style>
