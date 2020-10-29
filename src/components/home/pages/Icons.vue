@@ -10,6 +10,7 @@
 	    		<div class="icons-item"
 	    			v-for="icon in val" 
 	    			:key="icon.id"
+	    			@click="toDetail"
 	    		>
 	    			<img :src="icon.imgUrl" alt="">
 	    			<p>{{icon.title}}</p>
@@ -43,6 +44,11 @@ export default {
 			})
 
 			return pages
+		}
+	},
+	methods: {
+		toDetail() {
+			this.$router.push('/detail');
 		}
 	}
 }

@@ -22,9 +22,9 @@
       return {
         swiperOptions: {
           pagination: {
-            el: '.swiper-pagination'
-          },
-          loop: true
+            el: '.swiper-pagination',
+            type:'fraction'
+          }
         }
       }
     },
