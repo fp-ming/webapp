@@ -31,7 +31,7 @@ export default {
 		HomeActivity,
 		HomeHot,
 		HomeLike,
-		HomeVacation
+		HomeVacation,
 	},
 	data () {
 		return {
