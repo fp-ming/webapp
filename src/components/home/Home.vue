@@ -12,8 +12,10 @@
 </template>
 <script>
 
+// 用vuex进行状态管理
 import {mapState} from 'vuex'
 
+// 导入页面需要的自定义组件
 import HomeHeader from './pages/Header'
 import HomeSwiper from './pages/Swiper'
 import HomeIcons from './pages/Icons'
