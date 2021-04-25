@@ -2,7 +2,7 @@
 
 <div class="home-like">
 	<div class="like-top">
-		<img src="http://img1.qunarzz.com/piao/fusion/1711/89/ebc329f16c55bb02.png" alt="">
+		<img src="http://img1.qunarzz.com/piao/fusion/1711/89/ebc329f16c55bb02.png" alt="找不到图片">
 		<span>猜你喜欢</span>
 	</div>
 	<div class="like-list">
