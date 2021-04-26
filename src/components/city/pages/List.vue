@@ -15,7 +15,7 @@
 					class="city-hot-item"
 					v-for="city in hotCities"
 					:key="city.id"
-					@click="changeCityName(city.name)"
+					@click="changeCityName(city.name)" 
 				>
 					{{city.name}}
 				</li>
