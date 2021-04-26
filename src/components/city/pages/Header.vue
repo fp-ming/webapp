@@ -41,7 +41,7 @@ export default {
 	position: absolute;
 	left: .1rem;
 }
-.city-header-title {
+.city-header-title { 
 }
 
 </style>
