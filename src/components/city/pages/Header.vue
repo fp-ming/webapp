@@ -2,7 +2,7 @@
 	
 <div class="city-header">
 	<span 
-		class="iconfont city-header-return"
+		class="iconfont city-header-return" 
 		@click="toHome"
 	>
 		&#xe602;
