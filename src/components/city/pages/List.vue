@@ -9,7 +9,7 @@
 		<div class="city-hot">
 			<div class="city-hot-title">
 				热门城市
-			</div>
+			</div> 
 			<ul class="city-hot-list">
 				<li 
 					class="city-hot-item"
