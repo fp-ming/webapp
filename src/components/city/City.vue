@@ -9,7 +9,7 @@
 
 <script>
 	
-import CityHeader from './pages/Header'
+import CityHeader from './pages/Header' 
 import CityList from './pages/List'
 
 export default {
