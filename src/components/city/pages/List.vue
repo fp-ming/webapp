@@ -7,7 +7,7 @@
 		<!-- city-hot -->
 		<div class="city-hot">
 			<div class="city-hot-title">
-				热门城市
+				热门城市 
 			</div> 
 			<ul class="city-hot-list">
 				<li 
