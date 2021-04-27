@@ -1,31 +1,29 @@
 <template>
-	
-<div class="detail-banner">
-	<div @click="showSwiper">
-		<div class="detail-banner-img">
-			<img src="http://img1.qunarzz.com/sight/p0/1609/7a/7ae8ee7831836095a3.water.jpg_200x200_36727f69.jpg">
-		</div>
-		<div class="detail-banner-title">
-			金海湖风景区（AAA景区）
-		</div>
-	</div>
-	<div 
-		class="detail-banner-swiper"
-		v-show="swiper"
-		@click="hideSwiper"
-	>
-		<swiper ref="mySwiper" :options="swiperOptions">
-	    	<swiper-slide
-        		v-for="ban in bannerList"
-        		:key="ban.id"
-      		>
-	    	<img :src="ban.imgUrl" alt="">
-	    	</swiper-slide>
-	    	<div class="swiper-pagination" slot="pagination"></div>
-  		</swiper>
-	</div>
-</div>
-
+  <div class="detail-banner">
+    <div @click="showSwiper">
+      <div class="detail-banner-img">
+        <img src="http://img1.qunarzz.com/sight/p0/1609/7a/7ae8ee7831836095a3.water.jpg_200x200_36727f69.jpg">
+      </div>
+      <div class="detail-banner-title">
+        金海湖风景区（AAA景区）
+      </div>
+    </div>
+    <div 
+      class="detail-banner-swiper"
+      v-show="swiper"
+      @click="hideSwiper"
+    >
+      <swiper ref="mySwiper" :options="swiperOptions">
+          <swiper-slide
+              v-for="ban in bannerList"
+              :key="ban.id"
+            >
+          <img :src="ban.imgUrl" alt="">
+          </swiper-slide>
+          <div class="swiper-pagination" slot="pagination"></div>
+        </swiper>
+    </div>
+  </div>
 </template>
 
 <script>
