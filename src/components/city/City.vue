@@ -1,5 +1,5 @@
 <template>
-<-- 城市列表 -->
+<!-- 城市列表 -->
 <div class="city">
 		<CityHeader />
 		<CityList :hotCities='hotCities' :cities='cities'  />
