@@ -15,7 +15,7 @@ import DetailBanner from './pages/Banner'
 
 export default {
 	components: {	
-		DetailBanner,
+		DetailBanner, 
 		DetailHeader,
 	}
 }
