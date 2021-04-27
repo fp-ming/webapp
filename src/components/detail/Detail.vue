@@ -7,23 +7,21 @@
 </template>
  
 <script>
+  import DetailHeader from './pages/Header'
+  import DetailBanner from './pages/Banner'
 
-import DetailHeader from './pages/Header'
-import DetailBanner from './pages/Banner'
+  export default {
+    components: {	
+      DetailBanner, 
+      DetailHeader,
+    }
+  }
 
-export default {
-	components: {	
-		DetailBanner, 
-		DetailHeader,
-	}
-}
+  </script>
 
-</script>
+  <style scoped>
 
-<style scoped>
-
-.detail {
-	background: #f5f5f5;
-}
-
+  .detail {
+    background: #f5f5f5;
+  }
 </style>
