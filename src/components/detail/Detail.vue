@@ -1,11 +1,9 @@
 <template>
-	
-<div class="detail">
-	<DetailBanner />
-	<DetailHeader />
-	<div style="height:1000px"></div>
-</div>
-
+  <div class="detail">
+    <DetailBanner />
+    <DetailHeader />
+    <div style="height:1000px"></div>
+  </div>
 </template>
  
 <script>
