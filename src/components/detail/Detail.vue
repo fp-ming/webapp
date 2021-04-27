@@ -7,7 +7,7 @@
 </div>
 
 </template>
-
+ 
 <script>
 
 import DetailHeader from './pages/Header'
