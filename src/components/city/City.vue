@@ -31,6 +31,7 @@ export default {
 	},
 	methods: {
 		http () {
+      // 使用全局 axios 请求数据
 			this.axios.get('/api/city.json')
 			.then(res => {
 				const data = res.data.data;
