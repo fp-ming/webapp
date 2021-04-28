@@ -1,15 +1,14 @@
 <template>
-	
-<div class="city-header">
-	<span 
-		class="iconfont city-header-return" 
-		@click="toHome"
-	>
-		&#xe602;
-	</span>
-	<span class="city-header-title">城市选择</span>
-</div>
-
+  <!-- 城市列表页面头部 -->
+  <div class="city-header">
+    <span 
+      class="iconfont city-header-return" 
+      @click="toHome"
+    >
+      &#xe602;
+    </span>
+    <span class="city-header-title">城市选择</span>
+  </div>
 </template>
 
 <script>
