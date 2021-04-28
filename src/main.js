@@ -27,7 +27,7 @@ Vue.prototype.axios = axios
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
-  router,
+  router, // 注册全局路由
   store,
   components: { 
   	App,
