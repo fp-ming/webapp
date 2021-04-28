@@ -22,6 +22,7 @@ export default {
 	},
 	data () {
 		return {
+      // 用于渲染页面的数据
 			hotCities:[],
 			cities:{},
 		}
