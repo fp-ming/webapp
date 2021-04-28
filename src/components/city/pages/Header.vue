@@ -24,7 +24,7 @@ export default {
 
 </script>
 
-<style scoped lang="stylus"> /*使用stylus框架 */
+<style scoped lang="stylus"> /* 使用stylus框架 */
 /* 在css部分导入外部css文件 */
 @import '~@css/var.styl'	
 .city-header {
