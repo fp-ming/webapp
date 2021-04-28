@@ -15,7 +15,7 @@ import CityHeader from './pages/Header'
 import CityList from './pages/List'
 
 export default {
-
+  // 注册导入的组件
 	components: {
 		CityHeader,
 		CityList
