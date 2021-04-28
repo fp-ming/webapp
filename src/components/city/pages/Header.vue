@@ -16,6 +16,7 @@
 export default {
 	methods: {
 		toHome () {
+      // 跳转到根路由
 			this.$router.push('/');
 		}
 	}
