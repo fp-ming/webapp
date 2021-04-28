@@ -9,11 +9,13 @@
 </template>
 
 <script>
-	
+
+// 导入组件
 import CityHeader from './pages/Header' 
 import CityList from './pages/List'
 
 export default {
+
 	components: {
 		CityHeader,
 		CityList
