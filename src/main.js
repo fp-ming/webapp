@@ -21,6 +21,7 @@ Vue.use(VueAwesomeSwiper)
 
 // 导入axios
 import axios from 'axios'
+// 将axios赋值给Vue的原型，实现设置全局axios
 Vue.prototype.axios = axios
 
 /* eslint-disable no-new */
