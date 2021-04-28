@@ -2,6 +2,7 @@
 <!-- 城市列表 -->
 <div class="city">
 		<CityHeader />
+    <!-- 传递数据hotCities和cities数据给子组件 -->
 		<CityList :hotCities='hotCities' :cities='cities'  />
 </div>
 
