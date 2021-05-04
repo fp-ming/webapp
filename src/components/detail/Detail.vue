@@ -13,7 +13,8 @@
   /* 引入子组件 */
   import DetailHeader from './pages/Header'
   import DetailBanner from './pages/Banner'
-
+  
+  /* 注册自子组件 */
   export default {
     components: {	
       DetailBanner, 
