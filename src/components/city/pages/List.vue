@@ -2,7 +2,7 @@
 	
 <div class="wrapper">
 	<div  class="content">
-		<div ref="top"></div>
+		<div ref="top"></div> 
 
 		<!-- city-hot -->
 		<div class="city-hot"> 
