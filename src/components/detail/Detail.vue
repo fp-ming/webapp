@@ -1,6 +1,7 @@
 <template>
   <div class="detail">
-    <DetailBanner />
+  <!-- 使用子组件 -->
+    <DetailBanner />  
     <DetailHeader />
     <div style="height:1000px"></div>
   </div>
