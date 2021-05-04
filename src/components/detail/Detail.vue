@@ -3,6 +3,8 @@
   <!-- 使用子组件 -->
     <DetailBanner />  
     <DetailHeader />
+    
+    <!-- 定义撑起底部的容器 -->
     <div style="height:1000px"></div>
   </div>
 </template>
