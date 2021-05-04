@@ -5,7 +5,7 @@
 		<div ref="top"></div>
 
 		<!-- city-hot -->
-		<div class="city-hot">
+		<div class="city-hot"> 
 			<div class="city-hot-title">
 				热门城市 
 			</div> 
