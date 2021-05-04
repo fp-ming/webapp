@@ -10,6 +10,7 @@
 </template>
  
 <script>
+  /* 引入子组件 */
   import DetailHeader from './pages/Header'
   import DetailBanner from './pages/Banner'
 
