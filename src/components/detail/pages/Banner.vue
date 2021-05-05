@@ -14,6 +14,7 @@
       v-show="swiper"
       @click="hideSwiper"
     >
+      <!-- 使用swiper插件实现轮播图片 -->
       <swiper ref="mySwiper" :options="swiperOptions">
           <swiper-slide
               v-for="ban in bannerList"
