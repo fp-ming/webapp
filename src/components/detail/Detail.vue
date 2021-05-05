@@ -14,9 +14,9 @@
   import DetailHeader from './pages/Header'
   import DetailBanner from './pages/Banner'
   
-  /* 注册自子组件 */
+ 
   export default {
-    components: {	
+    components: {	 /* 注册自子组件 */
       DetailBanner, 
       DetailHeader,
     }
