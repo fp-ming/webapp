@@ -1,7 +1,7 @@
 <template>
   <div class="detail-banner">
     <div @click="showSwiper">
-      <div class="detail-banner-img">
+      <div class="detail-banner-img"> 
         <img src="http://img1.qunarzz.com/sight/p0/1609/7a/7ae8ee7831836095a3.water.jpg_200x200_36727f69.jpg">
       </div>
       <div class="detail-banner-title">
