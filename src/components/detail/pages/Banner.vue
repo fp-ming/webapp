@@ -1,4 +1,5 @@
 <template>
+  <!-- 景点详情组件 -->
   <div class="detail-banner">
     <div @click="showSwiper">
       <div class="detail-banner-img"> 
