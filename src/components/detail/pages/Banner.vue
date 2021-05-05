@@ -33,7 +33,7 @@ export default {
 	data () {
 		return {
 			swiper:false,
-      /* 用于渲染页面的数据 */
+      /* 用于渲染页面的图片路径数据 */
 			bannerList:[
 				{
 					id:"01",
