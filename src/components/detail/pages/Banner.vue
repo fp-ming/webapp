@@ -47,6 +47,7 @@ export default {
 					imgUrl:"http://img1.qunarzz.com/sight/p0/1609/e4/e45d9cb483478459a3.water.jpg_r_800x800_a044eb00.jpg"
 				}
 			],
+     /* swiper 组件数据 */
 			swiperOptions: {
 	          pagination: {
 	            el: '.swiper-pagination'
